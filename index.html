@@ -1,0 +1,168 @@
+<!-- ========================= index.html ========================= -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Общество и порядок — юридические услуги</title>
+  <meta name="description" content="Юридическая фирма «Общество и порядок». Бесплатная консультация. Судебное представительство, административные, налоговые, гражданские и корпоративные споры." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container nav">
+     <div class="brand">
+  <img src="logo.png" alt="Общество и порядок" class="brand-logo" />
+  <span class="brand-text">Общество и порядок</span>
+</div>
+
+      <nav class="menu">
+        <a href="#hero" class="active">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M3 10.5l9-7 9 7v9A1.5 1.5 0 0 1 19.5 21h-15A1.5 1.5 0 0 1 3 19.5v-9z"/><path d="M9 21v-6h6v6"/></svg>
+          Главная
+        </a>
+        <a href="#services"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M4 7h16v3H4zM4 12h16v3H4zM4 17h16v3H4z"/></svg>Услуги</a>
+        <a href="#process"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h7v4H4zM13 6h7v4h-7zM4 14h7v4H4zM13 14h7v4h-7z"/></svg>Как мы работаем</a>
+        <a href="#contact"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12l4-3h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO (как на ваших скринах) -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <img src="logo.png" alt="Логотип" class="crest" />
+      <h1>Возможно онлайн консультация. Не выходя из дома, экономия времени и ресурсов</h1>
+      <p class="hero-sub">Услуги Юриста физическим лицам (в любых областях права, представление интересов в суде) и Юридическим лицам (сопровождение бизнеса, представление интересов в суде)</p>
+      <p class="hero-desc">Мы предоставим Вам бесплатную юридическую консультацию</p>
+      <div class="hero-actions">
+        <a class="btn btn-call" href="tel:+77074746763">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C12.4 21 3 11.6 3 1a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/></svg>
+          Позвонить сейчас
+        </a>
+        <a class="btn btn-wa" href="https://wa.me/77074746763" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.11c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.35-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.83-2.01-.22-.53-.44-.45-.61-.46-.16 0-.34-.01-.52-.01s-.48.07-.73.34c-.25.27-.96.94-.96 2.28 0 1.34.98 2.63 1.12 2.81.14.18 1.93 3.02 4.72 4.23.66.29 1.18.46 1.58.59.66.21 1.26.18 1.73.11.53-.08 1.59-.65 1.81-1.29.22-.64.22-1.18.15-1.29-.07-.11-.25-.18-.52-.32z"/><path d="M27.55 4.45C24.8 1.7 21.17 0 17.33 0 8.86 0 1.94 6.92 1.94 15.38c0 2.71.71 5.32 2.04 7.64L2.01 30l7.18-1.89A15.36 15.36 0 0017.33 30c8.46 0 15.39-6.92 15.39-15.38 0-3.84-1.7-7.47-4.45-10.17zm-10.22 23.2a12.18 12.18 0 01-6.22-1.7l-.45-.27-4.26 1.12 1.14-4.15-.3-.47a12.23 12.23 0 01-1.87-6.59c0-6.75 5.5-12.25 12.28-12.25 3.27 0 6.34 1.27 8.66 3.58a12.13 12.13 0 013.61 8.67c0 6.75-5.5 12.25-12.29 12.25z"/></svg>
+          Написать на WhatsApp
+        </a>
+      </div>
+      <p class="hero-contacts">Тел.: +7 707 474 67 63 • E‑mail: <a href="mailto:dturginbay@mail.ru">dturginbay@mail.ru</a></p>
+      
+    </div>
+  </section>
+
+  <!-- Короткие преимущества -->
+  <section class="benefits">
+    <div class="container benefits-row">
+      <div class="benefit"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v12H3z"/><path d="M7 10h10v4H7z"/></svg><div><strong>Откуда удобно</strong><p>Напишите или позвоните нам из любого города.</p></div></div>
+      <div class="benefit"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8V4m0 16v-4M4 12H0m24 0h-4M5.6 5.6L3.2 3.2m17.6 17.6-2.4-2.4M18.4 5.6l2.4-2.4M3.2 20.8l2.4-2.4"/></svg><div><strong>В любое время</strong><p>24/7 — отвечаем быстро и по делу.</p></div></div>
+      <div class="benefit"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8-4.5-8-11a8 8 0 1116 0c0 6.5-8 11-8 11z"/></svg><div><strong>Принятие заявки</strong><p>Начинаем решать ваш вопрос через 5 минут.</p></div></div>
+    </div>
+  </section>
+
+  <!-- Услуги (из вашего текста) -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Услуги юриста</h2>
+      <div class="services-grid">
+        <article class="svc"><h3>Дела по административным правонарушениям (КоАП)</h3><p>Защита при привлечении к административной ответственности. Обжалование протоколов и постановлений о штрафах, лишении водительских прав и иных санкциях.</p></article>
+        <article class="svc"><h3>Административные дела (АППК)</h3><p>Обжалование решений государственных органов, действий и бездействия должностных лиц. Защита при отказах в совершении юридически значимых действий.</p></article>
+        <article class="svc"><h3>Налоговые и таможенные споры</h3><p>Оспаривание актов налоговых органов, незаконных начислений и штрафов. Обжалование решений таможенных органов и защита интересов при проверках.</p></article>
+        <article class="svc"><h3>Гражданские дела</h3><p>Представительство по имущественным и обязательственным спорам. Взыскание убытков, компенсаций и защита прав собственности.</p></article>
+        <article class="svc"><h3>Семейные дела</h3><p>Алименты, бракоразводные процессы, раздел имущества, установление и оспаривание отцовства.</p></article>
+        <article class="svc"><h3>Дела с участием несовершеннолетних</h3><p>Защита прав и интересов детей. Опека, попечительство, лишение и ограничение родительских прав.</p></article>
+        <article class="svc"><h3>Предпринимательские споры</h3><p>Разрешение конфликтов между ТОО и ИП. Обжалование актов проверок и защита прав предпринимателей.</p></article>
+        <article class="svc"><h3>Корпоративные споры</h3><p>Разногласия между участниками и акционерами. Обжалование решений органов управления и корпоративных сделок.</p></article>
+        <article class="svc"><h3>Трудовые споры</h3><p>Восстановление на работе, взыскание заработной платы и компенсаций. Обжалование незаконных увольнений и дисциплинарных взысканий.</p></article>
+        <article class="svc"><h3>Банкротство физических и юридических лиц</h3><p>Сопровождение процедур банкротства. Защита интересов должников и кредиторов.</p></article>
+        <article class="svc"><h3>Взыскание задолженности</h3><p>Предъявление исков и получение исполнительных документов. Сопровождение взыскания через судебных исполнителей.</p></article>
+        <article class="svc"><h3>Жилищные споры</h3><p>Приватизация, регистрация и оспаривание прав на недвижимость. Выселение, признание сделок недействительными, восстановление в очереди на жильё.</p></article>
+        <article class="svc"><h3>Земельные споры</h3><p>Предоставление и изъятие земельных участков. Установление границ и признание права собственности.</p></article>
+        <article class="svc"><h3>Строительные споры</h3><p>Конфликты по договорам подряда, качеству и срокам работ. Споры при сдаче и приёмке объектов.</p></article>
+        <article class="svc"><h3>Споры с военными органами</h3><p>Обжалование дисциплинарных взысканий. Споры о прохождении службы и защита социальных прав военнослужащих.</p></article>
+        <article class="svc"><h3>Монопольные споры</h3><p>Обжалование действий субъектов естественных монополий. Защита по вопросам тарифного регулирования и конкуренции.</p></article>
+        <article class="svc"><h3>Пенсионные споры</h3><p>Назначение и перерасчёт пенсий. Обжалование отказов и защита пенсионных прав.</p></article>
+        <article class="svc"><h3>Споры по государственным закупкам</h3><p>Оспаривание результатов конкурсов и тендеров. Защита прав участников закупок при нарушении законодательства о государственных закупках.</p></article>
+      <<!-- Судебные исполнители (добавьте ОДИН РАЗ) -->
+<article class="svc" id="svc-bailiffs">
+  <h3>Обжалование решений и действий судебных исполнителей</h3>
+  <p>Признание незаконными постановлений и действий судебных исполнителей. Оспаривание арестов, взысканий и ограничений. Защита прав должников и взыскателей.</p>
+</article>
+    </div>
+  </section>
+<div class="note" id="social-discount">
+  <p>Для <strong>социально уязвимых слоёв населения</strong> предусмотрено применение
+    <span class="highlight">льгот и скидок</span> на предоставляемые услуги в целях обеспечения доступности и социальной поддержки.
+  </p>
+</div>
+
+
+  <!-- CTA‑баннер -->
+  <section class="cta">
+    <div class="container">
+      <h2>Что для этого нужно?</h2>
+      <p>Мы обеспечиваем помощь 24/7. Напишите нам в WhatsApp — это займёт не более 5 минут.</p>
+      <a class="btn btn-ghost" href="https://wa.me/77074746763" target="_blank" rel="noopener">НАПИСАТЬ СЕЙЧАС</a>
+    </div>
+  </section>
+
+  <!-- Процесс -->
+  <section id="process" class="section process">
+    <div class="container steps">
+      <div class="step"><div class="badge">1</div><h3>Заявка</h3><p>Оставляете контакты или звоните нам ▸ мы оперативно перезваниваем.</p></div>
+      <div class="step"><div class="badge">2</div><h3>Консультация</h3><p>Разбираем ситуацию, даём план действий и фиксируем стоимость.</p></div>
+      <div class="step"><div class="badge">3</div><h3>Договор и работа</h3><p>Согласовываем документы и реализуем стратегию до результата.</p></div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Связаться с нами</h2>
+        <p>Тел.: <a href="tel:+77074746763">+7 707 474 67 63</a><br>E‑mail: <a href="mailto:dturginbay@mail.ru">dturginbay@mail.ru</a></p>
+        <div class="contact-actions">
+          <a class="btn btn-call" href="tel:+77074746763">Позвонить</a>
+          <a class="btn btn-wa" href="https://wa.me/77074746763" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Карта" src="https://www.google.com/maps?q=Астана&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container foot">
+      <div class="foot-col">
+        <div class="brand small"><span class="brand-mark"></span><span class="brand-text">Общество и порядок</span></div>
+        <p>Сопровождение споров и сделок. Работаем по всему Казахстану.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#process">Как мы работаем</a></li>
+          <li><a href="#contact">Связаться</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Контакты</h4>
+        <p>Тел.: <a href="tel:+77074746763">+7 707 474 67 63</a><br>E‑mail: <a href="mailto:dturginbay@mail.ru">dturginbay@mail.ru</a></p>
+      </div>
+      <div class="foot-col">
+        <h4>Конфиденциальность</h4>
+        <p>Мы соблюдаем законы о персональных данных и адвокатскую тайну. Данные не передаются третьим лицам.</p>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> Общество и порядок. Все права защищены.</div>
+  </footer>
+</body>
+</html>
+

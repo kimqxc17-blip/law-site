@@ -1,0 +1,252 @@
+/* ========================= styles.css ========================= */
+:root{
+  --brand:#38261A;           /* ваш цвет */
+  --bg:#0B0E12;              /* общий тёмный фон */
+  --card:#11161C;            /* карточки */
+  --muted:#AAB3C5;           /* вторичный текст */
+  --text:#EAF0FB;            /* основной текст */
+  --green:#14B87A;           /* кнопка звонка */
+  --wa:#25D366;              /* WhatsApp */
+  --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35)
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text)}
+img{max-width:100%;display:block}
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand.small .brand-text{font-weight:700}
+.brand-mark{width:12px;height:28px;background:var(--brand);border-radius:3px}
+.menu{display:flex;gap:22px;font-weight:700}
+.menu a{display:flex;align-items:center;gap:8px;color:#d9e2f2;text-decoration:none}
+.menu a.active,.menu a:hover{color:var(--green)}
+.ico{width:18px;height:18px}
+
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('hero.jpg') center/cover no-repeat;filter:brightness(.8)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(56,38,26,.75), rgba(11,14,18,.85));mix-blend:normal}
+.hero-inner{position:relative;z-index:1;text-align:center;max-width:900px}
+.crest{width:110px;margin:0 auto 8px}
+.hero h1{font-size:clamp(28px,5.4vw,46px);line-height:1.1;margin:10px 0}
+.hero-sub{font-size:clamp(15px,2.2vw,18px);opacity:.95;margin:0 auto 8px}
+.hero-desc{color:#d7e6db;margin-bottom:20px}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 20px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:var(--shadow)}
+.btn-call{background:var(--green);color:#fff}
+.btn-call:hover{filter:brightness(.95)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{filter:brightness(.95)}
+.hero-contacts{color:#cfe7de;margin-top:10px}
+.hero-contacts a{color:#cfe7de;text-decoration:underline}
+
+/* Benefits stripe */
+.benefits{background:#0e141b;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.benefits-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:22px 0}
+.benefit{display:flex;gap:12px;align-items:flex-start;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.07);padding:16px;border-radius:14px}
+.benefit strong{display:block}
+
+/* Sections */
+.section{padding:64px 0}
+.section-title{text-align:center;margin:0 0 18px;font-size:28px}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.svc{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:18px}
+.svc h3{margin:0 0 8px;color:#9FE6C2}
+.svc p{margin:0;color:#dfe7f5}
+
+/* CTA banner */
+.cta{background:radial-gradient(900px 300px at 10% 10%,#27402f 0,transparent 60%),radial-gradient(900px 300px at 90% 0,#1a2630 0,transparent 60%),linear-gradient(180deg,#1b2c22,#0b0e12);text-align:center;padding:54px 0;border-top:1px solid rgba(255,255,255,.06)}
+.cta h2{margin:0 0 8px}
+.cta p{margin:0 0 16px;color:#cfe7de}
+.btn-ghost{background:transparent;border:2px solid #d6f5e7;color:#d6f5e7}
+.btn-ghost:hover{background:rgba(214,245,231,.08)}
+
+/* Process */
+.process{background:#245442}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(17, 82, 133, 0.02));border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:18px}
+.badge{width:30px;height:30px;border-radius:50%;background:var(--brand);display:grid;place-items:center;font-weight:800;margin-bottom:6px}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.map iframe{width:100%;height:240px;border:0;border-radius:14px}
+.contact-actions{display:flex;gap:10px;margin-top:10px}
+
+/* Footer */
+.footer{background:#1b3b2b;padding:38px 0 14px;border-top:1px solid rgba(255,255,255,.07)}
+.foot{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.foot h4{margin:0 0 10px;color:#9FE6C2}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{margin:6px 0}
+.foot a{color:#cfe7de;text-decoration:none}
+.copy{text-align:center;color:#9aa6bd;font-size:14px;border-top:1px solid rgba(255,255,255,.1);margin-top:16px;padding-top:10px}
+
+/* Responsive */
+@media (max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr 1fr}.benefits-row{grid-template-columns:1fr}}
+@media (max-width:640px){.services-grid,.steps,.foot,.contact-grid{grid-template-columns:1fr}.hero{min-height:86vh}.hero h1{font-size:30px}}
+
+
+/* Фон с фото */
+#services {
+  position: relative;
+  background: url('bg-services.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 60px 0;
+}
+
+/* overlay затемнение */
+#services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: lab(11.53% 7.84 14.07 / 0.55); /* затемнение */
+  z-index: 0;
+}
+
+/* Контент поверх overlay */
+#services .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Карточки */
+.services-grid .svc {
+  background: rgba(20, 20, 20, 0.75); /* полупрозрачный фон */
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform .2s;
+}
+.services-grid .svc:hover {
+  transform: translateY(-5px);
+}
+/* JS қосылғанда ғана бастапқыда жасыр (fallback бар) */
+.js #services .section-title,
+.js #services .services-grid .svc,
+.js #services .services-grid .svc h3,
+.js #services .services-grid .svc p{
+  opacity:0;
+  transform:translateY(26px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+
+/* Тақырып */
+.js #services .section-title.show{
+  opacity:1; transform:none;
+  transition-delay:120ms;
+}
+
+/* Карточканың өзі */
+.js #services .services-grid .svc.show{
+  opacity:1; transform:none;
+  /* JS мұны әр карточкаға қойып береді */
+  transition-delay:var(--stagger,0ms);
+}
+
+/* Ішіндегі мәтіндер карточкадан кейін жұмсақ шығады */
+.js #services .services-grid .svc.show h3{
+  opacity:1; transform:none; transition-delay:calc(var(--stagger,0ms) + 120ms);
+}
+.js #services .services-grid .svc.show p{
+  opacity:1; transform:none; transition-delay:calc(var(--stagger,0ms) + 220ms);
+}
+.note {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(20, 184, 122, 0.1); /* мягкий фон с оттенком зелёного */
+  border-left: 4px solid #14b87a;      /* акцентная полоска */
+  border-radius: 8px;
+  font-size: 15px;
+  color: #eee;
+  text-align: center;
+}
+.note .highlight {
+  color: #14b87a;
+  font-weight: 600;
+}
+/* Акцент-блок про льготы — светлый фон */
+.note {
+  margin-top: 28px;
+  padding: 20px 24px;
+  background: rgba(30, 208, 138, 0.15);  /* ашық-жасыл фон */
+  border: 1px solid #1ed08a;             /* айқын жасыл сызық */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  color: #e6e6e6;                        /* ашық-сұр жазу */
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.note strong {
+  color: #ffffff;                        /* ақ түспен бөліп көрсету */
+  font-weight: 800;
+}
+
+.note .highlight {
+  color: #1ed08a;                        /* жасыл акцент */
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.brand-logo {
+  height: 40px;     /* биіктігін реттеу */
+  margin-right: 10px;
+}
+/* Сілтемелер үшін жалпы стиль */
+a {
+  color: #14b87a; /* жасыл (сол сайтыңыздың түстерімен үйлеседі) */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d9b65; /* күңгірт жасыл hover үшін */
+  text-decoration: underline;
+}
+
+/* Контакты бөлімі үшін бөлек */
+.contact a,
+.footer a {
+  color: #14b87a;
+  font-weight: 600;
+}
+/* ===== Контакт бөлімі – контрастты түстер ===== */
+.section.contact,
+.section.contact .contact-grid,
+.section.contact .contact-grid p,
+.section.contact .contact-grid h2 {
+  color: #f3f6f5;                 /* ашық мәтін */
+}
+
+/* Контакттағы сілтемелер (телефон, email) */
+.section.contact a,
+.section.contact a:visited {
+  color: #9af0c8;                 /* ашық жасыл */
+  font-weight: 700;
+  text-decoration: none;
+}
+.section.contact a:hover {
+  color: #c9ffdf;
+  text-decoration: underline;
+}
+
+/* Түймелердің жазуы әрдайым ақ болсын */
+.btn, .btn * { color: #ffffff !important; }
+.btn-call { background:#14b87a; }
+.btn-call:hover { background:#0d9b65; }
+.btn-wa { background:#25D366; }
+.btn-wa:hover { background:#1ebe5a; }
+
+/* ===== Футер де оқылатын болсын ===== */
+.footer { color:#e8ebe9; }
+.footer a,
+.footer a:visited { color:#9af0c8; text-decoration:none; }
+.footer a:hover { color:#c9ffdf; text-decoration:underline; }
+
+/* Жалпы visited түсін де бекітіп қоямыз */
+a:visited { color: #14b87a; }
